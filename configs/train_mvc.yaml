@@ -1,0 +1,48 @@
+# SyncMask Multi-View Clustering default config
+# Usage: python main_mvc.py --config configs/train_mvc.yaml
+
+dataset: caltech101-20
+data_dir: ./data
+train_ratio: 0.8
+noise_std: 0.1
+dropout_rate: 0.1
+
+embed_dim: 128
+encoder_hidden_dim: 256
+encoder_num_layers: 2
+encoder_dropout: 0.1
+
+fusion_n_heads: 4
+fusion_n_layers: 1
+fusion_dropout: 0.1
+
+cluster_head_hidden_dim: 256
+cluster_temperature: 0.1
+
+num_masked_views: 4
+min_keep_views: 1
+adaptive_masking: true
+mask_warmup_epochs: 20
+
+lambda_cluster: 1.0
+lambda_entropy: 5.0
+entropy_sample_weight: 0.1
+cluster_loss_symmetric: true
+entropy_warmup_epochs: 10
+entropy_warmup_multiplier: 2.0
+
+optimizer: adam
+lr: 0.001
+weight_decay: 0.0001
+min_lr: 0.000001
+use_scheduler: true
+max_epochs: 200
+batch_size: 256
+num_workers: 4
+seed: 42
+
+eval_every: 5
+
+output_dir: ./outputs
+exp_name: null
+gpus: 1

@@ -1,0 +1,11 @@
+# Tested on Linux + CUDA 12.1; see Appendix A.1 of the paper for hardware (single NVIDIA RTX 3090, 24 GB VRAM).
+# Other versions of these packages may work but are not validated.
+
+torch==2.1.0
+pytorch-lightning>=2.1,<3.0
+
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+PyYAML>=6.0
+matplotlib>=3.7
