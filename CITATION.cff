@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper using preferred-citation."
+type: software
+title: "CRAFT: Co-occurrence-free Robust Attention-masked Fusion Transformer"
+authors:
+  - name: "CRAFT contributors"
+repository-code: "https://github.com/dk23lhl/CRAFT"
+url: "https://github.com/dk23lhl/CRAFT"
+preferred-citation:
+  type: conference-paper
+  title: "Beyond Missing Rates: Rethinking Incomplete Multi-View Clustering with Protocol Divergence"
+  authors:
+    - family-names: Liu
+      given-names: Haolu
+    - family-names: Wang
+      given-names: Xiyue
+    - family-names: Xie
+      given-names: Xuanting
+    - family-names: Wen
+      given-names: Liangjian
+    - family-names: Kang
+      given-names: Zhao
+  collection-title: "Advances in Neural Information Processing Systems"
+  year: 2026
+  notes: "Accepted as a poster paper."
+  url: "https://arxiv.org/abs/2606.04857"
